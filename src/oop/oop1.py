@@ -24,30 +24,30 @@ class Vehicle:
 
 
 # CHILD
-class GroundVehicle:
+class GroundVehicle(Vehicle):
     pass
 
 
 # GRANDCHILD
-class Car:
+class Car(GroundVehicle):
     pass
 
 
 # GRANDCHILD
-class Motorcycle:
+class Motorcycle(GroundVehicle):
     pass
 
 
 # CHILD
-class FlightVehicle:
+class FlightVehicle(Vehicle):
     pass
 
 
 # GRANDCHILD
-class Starship:
+class Starship(FlightVehicle):
     pass
 
 
 # GRANDCHILD
-class Airplane:
+class Airplane(FlightVehicle):
     pass
